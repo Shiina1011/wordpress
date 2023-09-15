@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+.blogs {
+  width: 930px;
+}
+@media only screen and (max-width: 1000px) {
+  .blogs {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contacts {
+    width: 700px;
+  }
+}
+
+a {
+  text-decoration: underline !important;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  min-height: 50px;
+  margin-top: auto;
+}
+
+.icon {
+  margin-left: 6px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+}
+
+.body-bg {
+  background-color: #e8e8e8;
+}
+
+.header-border {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #157bb0;
+}
+
+.logo-style {
+  color: #e4572e;
+  font-family: Quicksand, cursive;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none !important;
+}
+
+.navigation-main li,
+.navigation-hidden li {
+  position: relative;
+  tabindex: "0" !important;
+  padding-right: 15px;
+}
+
+.navigation-main li ul,
+.navigation-hidden li ul {
+  display: none !important;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  z-index: 99999;
+  width: 180px;
+  background: rgba(33, 33, 33, 1);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.navigation-main {
+  color: #157bb0;
+}
+
+.navigation-main li a {
+  font-family: Permanent Marker, cursive;
+  text-decoration: none !important;
+}
+
+.hamburger-line {
+  background-color: #157bb0;
+  height: 2px;
+  margin-top: 5px;
+}
+
+.navigation-hidden li a {
+  font-family: Permanent Marker, cursive;
+  color: #157bb0;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  border-bottom-width: 2px;
+  border-color: transparent;
+}
+.navigation-hidden ul li a:hover {
+  border-color: currentColor;
+  border-color: rgba(245, 158, 11, 1);
+}
+.navigation-hidden ul li a:focus {
+  border-color: currentColor;
+  border-color: rgba(245, 158, 11, 1);
+  text-decoration: underline;
+}
+.navigation-main ul li a:hover {
+  border-color: currentColor;
+  border-color: rgba(245, 158, 11, 1);
+}
+.navigation-main ul li a:focus {
+  border-color: currentColor;
+  border-color: rgba(245, 158, 11, 1);
+  text-decoration: underline;
+}
+.navigation-main li a:hover {
+  border-color: currentColor;
+  border-color: rgba(245, 158, 11, 1);
+}
+
+.navigation-main li a:focus {
+  border-color: currentColor;
+  border-color: rgba(245, 158, 11, 1);
+  text-decoration: underline;
+}
+
+.screen-reader-text {
+  color: white;
+}
+a:hover,
+a:focus {
+  text-decoration: underline !important;
+}
+.comment-reply-title {
+  color: white;
+  margin-left: 1.25rem;
+}
+
+.post-categories {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-categories li {
+  margin-right: 10px;
+}
+
+.hero-main {
+  background-image: url(./src/images/bg-home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 580px;
+}
+
+.quicksand-font {
+  font-family: Quicksand, sans-serif;
+}
+
+.permanent-font {
+  font-family: Permanent Marker, cursive;
+}
+
+.learn-more-button {
+  border: 1px solid #e4572e;
+  width: 230px;
+  height: 56px;
+  font-family: Permanent Marker, cursive;
+  color: #e4572e;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.post-block-home {
+  width: 290px;
+  height: 404px;
+  background: rgba(21, 123, 176, 0.1);
+  border: 1px solid #157bb0;
+  border-radius: 3px;
+}
+
+.post-block-button-home {
+  font-family: Permanent Marker, cursive;
+  width: 165px;
+  height: 41px;
+  border-radius: 3px;
+  background: #e8e8e8;
+  color: #074463;
+}
+
+.divider-line {
+  height: 1px;
+  background-color: #e6e6e6;
+  margin: 0 auto;
+  background-image: linear-gradient(left, #e8e8e8 2%, #157bb0 50%, #e8e8e8 98%);
+  background-image: -o-linear-gradient(
+    left,
+    #e8e8e8 2%,
+    #157bb0 50%,
+    #e8e8e8 98%
+  );
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    color-stop(0.02, #e8e8e8),
+    color-stop(0.5, #157bb0),
+    color-stop(0.98, #e8e8e8)
+  );
+}
+
+.contact-form-div {
+  border-radius: 3px;
+  background: rgba(21, 123, 176, 0.1);
+  box-sizing: border-box;
+  border: 1px solid #157bb0;
+}
+
+.contact-form-button {
+  width: 220px;
+  height: 41px;
+  font-family: Permanent Marker, cursive;
+  border-radius: 3px;
+  border: 1px solid #157bb0;
+  background: #157bb0;
+}
+
+.footer-div {
+  background-color: #f1f1f1;
+  height: 150px;
+}
+
+.navigation-footer ul {
+  color: #157bb0;
+}
+
+.navigation-footer li a {
+  font-family: Permanent Marker, cursive;
+}
+
+.footer-backlink-update {
+  color: #e4572e !important;
+  font-family: Permanent Marker !important;
+}
+
+.page-content {
+  background-color: rgba(21, 123, 176, 0.1);
+  border: 1px solid #157bb0;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.page-content-paragraph {
+  font-family: Quicksand, cursive;
+  color: #292929;
+}
+
+.page-content h1 {
+  font-family: Permanent Marker, cursive;
+  color: #000000;
+}
+
+.page-content h2 {
+  font-family: Quicksand, cursive;
+  color: #141414;
+  font-weight: 500;
+  margin-top: 1.75rem;
+}
+
+.page-content p {
+  font-family: Quicksand, cursive;
+  color: #141414;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.comments-holder {
+  border: 1px solid rgba(228, 87, 46, 0.5);
+  border-radius: 3px;
+}
+
+.comments-holder-h3 {
+  font-family: Permanent Marker, cursive;
+  color: #292929;
+}
+
+.page-content-h1 {
+  font-family: Permanent Marker, cursive;
+  color: #000000;
+}
+
+.comment-text {
+  font-family: Quicksand, cursive;
+  color: #141414;
+  font-weight: normal;
+}
+
+.comment-date {
+  font-family: Quicksand, cursive;
+}
+
+.comment-reply {
+  font-family: Permanent Marker, cursive;
+  color: #e4572e;
+}
+
+.comment-divider {
+  width: 3px;
+  height: 3px;
+  background-color: #292929;
+}
+
+.comments-logged-in {
+  display: block;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url,
+.comment-form-comment,
+.form-submit,
+.comment-notes,
+.comment-reply-title,
+.form-input {
+  display: none !important;
+}
+
+.logged-in .comments-logged-in {
+  display: none;
+}
+
+.logged-in .comment-form-comment,
+.logged-in .form-submit,
+.logged-in .comment-notes,
+.logged-in .comment-reply-link,
+.logged-in .comment-reply-title,
+.logged-in .form-input {
+  display: block !important;
+}
+
+.comment-form-cookies-consent {
+  display: none;
+}
+
+#reply-title {
+  display: none;
+}
+
+.search-bar {
+  font-family: Permanent Marker, cursive;
+  box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  border: 1.5px solid #e4572e;
+}
+
+.article-box {
+  width: 290px;
+  height: 404px;
+  background: rgba(21, 123, 176, 0.1);
+  border: 1px solid #157bb0;
+  border-radius: 3px;
+}
+
+.article-excerpt {
+  font-family: Quicksand, cursive;
+  color: #141414;
+}
+
+.article-button {
+  font-family: Permanent Marker, cursive;
+  width: 165px;
+  height: 41px;
+  border-radius: 3px;
+  background: #e8e8e8;
+  color: #074463;
+}
+
+.hero-gradient {
+  height: 256px;
+  background: linear-gradient(180deg, rgba(232, 232, 232, 0) 0%, #e8e8e8 100%);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.blockstyle {
+}
+.bypostauthor {
+}
+.alignleft {
+}
+.alignright {
+}
+.aligncenter {
+}
+.wp-caption {
+}
+.wp-caption-text {
+}
+.gallery-caption {
+}
+
+.navigation-main li,
+.navigation-hidden li {
+  position: relative;
+  tabindex: "0" !important;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline !important;
+}
+
+.screen-reader-text {
+  color: white;
+}
+
+.navigation-main li:hover > ul,
+.navigation-hidden li:hover > ul {
+  display: block !important;
+}
+
+.navigation-main li:focus-within > ul,
+.navigation-hidden li:focus-within > ul {
+  display: block !important;
+}
+
+.navigation-main li a:target > ul,
+.navigation-hidden li a:target > ul {
+  display: block !important;
+}
+
+.navigation-footer ul {
+  display: flex;
+  flex-direction: row;
+}
